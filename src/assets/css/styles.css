@@ -1,7 +1,86 @@
-/* BASE 
+/* GENERAL 
 ---------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BANNER 
+---------------------------- */
+.banner {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner__profile {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.banner__infos h1 {
+  font-weight: 500;
+  color: #3d338c;
+}
+
+.banner__infos h2 {
+  font-weight: 400;
+  color: #333;
+}
+
+.banner__summary {
+  margin: 30px auto;
+  padding: 10px 0;
+  font-style: italic;
+  color: #555;
+  border-top: 2px solid #3d338c;
+  border-bottom: 2px solid #3d338c;
+  max-width: 650px;
+}
+
+.banner__sm {
+  display: flex;
+  justify-content: space-around;
+  max-width: 450px;
+  margin: auto;
+}
+
+.banner__sm a {
+  color: #e59061;
+  font-size: 2.5rem;
+}
+
+.banner__sm a:hover {
+  color: #3d338c;
+  transition: color 0.4s;
+}
+
+/* MEDIA QUERIES 
+---------------------------- */
+@media (min-width: 800px) {
+  .banner__profile {
+    position: absolute;
+    margin: 0;
+    top: 40px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+
+  .banner__infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    max-width: 850px;
+    margin: auto;
+  }
 }

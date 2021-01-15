@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 10px 0;
+}
+
 /* BANNER 
 ---------------------------- */
 .banner {
@@ -24,25 +29,26 @@ a {
   object-fit: contain;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 3px solid #fff;
 }
 
 .banner__infos h1 {
   font-weight: 500;
-  color: #3d338c;
+  color: #ff7477;
 }
 
 .banner__infos h2 {
   font-weight: 400;
-  color: #333;
+  color: #20293d;
 }
 
 .banner__summary {
   margin: 30px auto;
   padding: 10px 0;
   font-style: italic;
-  color: #555;
-  border-top: 2px solid #3d338c;
-  border-bottom: 2px solid #3d338c;
+  color: #333;
+  border-top: 2px solid #20293d;
+  border-bottom: 2px solid #20293d;
   max-width: 650px;
 }
 
@@ -54,13 +60,89 @@ a {
 }
 
 .banner__sm a {
-  color: #e59061;
+  color: #ff7477;
   font-size: 2.5rem;
 }
 
 .banner__sm a:hover {
-  color: #3d338c;
-  transition: color 0.4s;
+  color: #20293d;
+  transition: color 0.3s;
+}
+
+/* MAIN CONTENT
+---------------------------- */
+.content {
+  margin: auto;
+  padding: 0 20px;
+  background: #f7f8f6;
+}
+
+.projects {
+  background: #f7f8f6;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.project__elt {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h4 {
+  color: #20293d;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+  border-bottom: 1px solid #ff7477;
+}
+
+.project__elt img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.project__description p {
+  font-style: italic;
+  color: #666;
+}
+
+.project__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-radius: 0 0 6px 6px;
+}
+
+.project__links a {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: #ff7477;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project__links a:hover {
+  background-color: #20293d;
 }
 
 /* MEDIA QUERIES 
